@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "Entry CSS Animator",
+  "version": "1.0",
+  "description": "entry.org에 CSS 애니메이션을 자동으로 적용합니다.",
+  "content_scripts": [
+    {
+      "matches": ["*://*.entry.org/*"],
+      "js": ["content.js"],
+      "css": ["styles.css"]
+    }
+  ],
+  "permissions": [],
+  "icons": {
+    "48": "icon.png"
+  }
+}
